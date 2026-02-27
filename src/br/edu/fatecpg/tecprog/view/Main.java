@@ -4,14 +4,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		double[] valor = new double[5];
+		double[] valores = new double[5];
 		double soma=0,media=0;
 		for(int i=0;i<5;i++) {
 			System.out.println("Digite o "+(i+1)+"º Número:");
-			valor[i] = scan.nextDouble();
+			valores[i] = scan.nextDouble();
 		}
 		for(int i=4;i>=0;i--) {
-			soma+=valor[i];
+			System.out.println(valores[i]+"\n");
+			soma+=valores[i];
 		}
 		media = soma/5;
 		System.out.println("A média é: "+media);
